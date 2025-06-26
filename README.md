@@ -5,25 +5,24 @@ The genomics of Escherichia coli (E. coli) strains causing neonatal sepsis ident
 More future work includes additional functional annotation of variants, comparative genomics and integration with phenotypic data to further understand the genetic determinants of neonatal sepsis.
 
 💻 The bioinformatics pipeline used for this study included the following steps:
-Raw Data Acquisition: Publicly available WGS data for E. coli strains was obtained from neonatal sepsis patients using the SRA Toolkit. 
-1. SRA ID: SRR28334538 (E. coli isolate from neonatal sepsis)
-2. Quality Control: Raw sequencing data were assessed using FastQC, which provided quality metrics such as per-base quality scores, GC content, and sequence duplication. 
-3. Trimmomatic was employed to trim low-quality bases and remove adapter sequences, ensuring clean reads for downstream analysis.
-4. Read Alignment: High-quality reads were aligned to the reference E. coli genome using BWA-MEM, a Burrows-Wheeler alignment algorithm optimized for short-read mapping.
-5. Reference genome : NC_000913.3 Escherichia coli str. K-12 substr. MG1655
-6. SAMtools was used after this step to convert SAM file into a BAM file.
-7. Variant Calling: SAMtools and BCFtools were used to call SNPs and Indels. The output was a Variant Call Format (VCF) file containing detailed variant information.
-8. Variant Filtration: Filters were applied using BCFtools to retain high-confidence variants, such as those with a quality score (QUAL) > 30 and a read depth (DP) > 10. 
-9. Variant Annotation: BEDTools was used for this step to annotate the variants obtained. This would further help us to predict their functional impacts.
-10 .Visualization: IGV (Integrative Genomics Viewer) was used to visualize variant locations across the genome. Python libraries (matplotlib and pandas) were incorporated to create graphs depicting variant distribution, depth of coverage, and variant types.
+1. Raw Data Acquisition: Publicly available WGS data for E. coli strains was obtained from neonatal sepsis patients using the SRA Toolkit. 
+2. SRA ID: SRR28334538 (E. coli isolate from neonatal sepsis) (Can be found in Releases)
+3. Quality Control: Raw sequencing data were assessed using FastQC, which provided quality metrics such as per-base quality scores, GC content, and sequence duplication. 
+4. Trimmomatic was employed to trim low-quality bases and remove adapter sequences, ensuring clean reads for downstream analysis.
+5. Read Alignment: High-quality reads were aligned to the reference E. coli genome using BWA-MEM, a Burrows-Wheeler alignment algorithm optimized for short-read mapping.
+6. Reference genome : NC_000913.3 Escherichia coli str. K-12 substr. MG1655
+7. SAMtools was used after this step to convert SAM file into a BAM file.
+8. Variant Calling: SAMtools and BCFtools were used to call SNPs and Indels. The output was a Variant Call Format (VCF) file containing detailed variant information.
+9. Variant Filtration: Filters were applied using BCFtools to retain high-confidence variants, such as those with a quality score (QUAL) > 30 and a read depth (DP) > 10. 
+10. Variant Annotation: BEDTools was used for this step to annotate the variants obtained. This would further help us to predict their functional impacts.
+11 .Visualization: IGV (Integrative Genomics Viewer) was used to visualize variant locations across the genome. Python libraries (matplotlib and pandas) were incorporated to create graphs depicting variant distribution, depth of coverage, and variant types.
 
 
-🔬 FINDINGS:
-1. The presence of nonsynonymous SNPs signals not only the prevalence of these but also possible adaptation mechanisms of E. coli in pathogenic situations, like newborn sepsis. With this result in hand, further work can be done to elucidate the functional roles of these variations. 
-2. The prevalence and quality of variants indicate a wide range of mutations that may contribute to the pathogenicity of E. coli strains in newborn sepsis. 
-3. The depth of coverage indicates that the sequencing workflow captured a large number of variations. Variants in well-covered regions are more likely to be actual and can be studied further for potential roles in E. coli virulence, antibiotic resistance, or other pathogenic pathways in newborn sepsis.
-4. This SNP dominant variation provides researchers many possible targets of genetic variation linked to newborn sepsis.
-Although indels are less common, they may carry important variants worth further study, especially those located in genes affecting virulence or important functions.
+🔬 FINDINGS: 
+1. The presence of nonsynonymous SNPs signals not only the prevalence of these but also possible adaptation mechanisms of E. coli in pathogenic situations, like newborn sepsis. With this result in hand, further work can be done to elucidate the functional roles of these variations. (/Visualization/IGV_visualization_of_variants.png)
+2. The prevalence and quality of variants across the genome indicate a wide range of mutations that may contribute to the pathogenicity of E. coli strains in newborn sepsis.  (/Visualization/Variant_distribution.png)
+3. The depth of coverage indicates that the sequencing workflow captured a large number of variations. Variants in well-covered regions are more likely to be actual and can be studied further for potential roles in E. coli virulence, antibiotic resistance, or other pathogenic pathways in newborn sepsis. (/Visualization/Depth_of_coverage.png)
+4. This SNP dominant variation provides researchers many possible targets of genetic variation linked to newborn sepsis. Although indels are less common, they may carry important variants worth further study, especially those located in genes affecting virulence or important functions. (/Visualization/Number_of_variants_type.png)
 
 The study is not complete; however, it is a limitation with the potential to expand into the functional annotation of variations or the linking of variants to particular phenotypes. Finally, integration of variant data with phenotypic assays and transcriptomics could add to our understanding of E. coli biology.
 
