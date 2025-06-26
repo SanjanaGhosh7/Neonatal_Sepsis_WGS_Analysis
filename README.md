@@ -6,7 +6,7 @@ More future work includes additional functional annotation of variants, comparat
 
 💻 The bioinformatics pipeline used for this study included the following steps:
 1. Raw Data Acquisition: Publicly available WGS data for E. coli strains was obtained from neonatal sepsis patients using the SRA Toolkit. 
-2. SRA ID: SRR28334538 (E. coli isolate from neonatal sepsis) (Can be found in Releases)
+2. SRA ID: SRR28334538 (E. coli isolate from neonatal sepsis) (Can be found in Releases for download)
 3. Quality Control: Raw sequencing data were assessed using FastQC, which provided quality metrics such as per-base quality scores, GC content, and sequence duplication. 
 4. Trimmomatic was employed to trim low-quality bases and remove adapter sequences, ensuring clean reads for downstream analysis.
 5. Read Alignment: High-quality reads were aligned to the reference E. coli genome using BWA-MEM, a Burrows-Wheeler alignment algorithm optimized for short-read mapping.
@@ -19,10 +19,10 @@ More future work includes additional functional annotation of variants, comparat
 
 
 🔬 FINDINGS: 
-1. The presence of nonsynonymous SNPs signals not only the prevalence of these but also possible adaptation mechanisms of E. coli in pathogenic situations, like newborn sepsis. With this result in hand, further work can be done to elucidate the functional roles of these variations. (/Visualization/IGV_visualization_of_variants.png)
-2. The prevalence and quality of variants across the genome indicate a wide range of mutations that may contribute to the pathogenicity of E. coli strains in newborn sepsis.  (/Visualization/Variant_distribution.png)
-3. The depth of coverage indicates that the sequencing workflow captured a large number of variations. Variants in well-covered regions are more likely to be actual and can be studied further for potential roles in E. coli virulence, antibiotic resistance, or other pathogenic pathways in newborn sepsis. (/Visualization/Depth_of_coverage.png)
-4. This SNP dominant variation provides researchers many possible targets of genetic variation linked to newborn sepsis. Although indels are less common, they may carry important variants worth further study, especially those located in genes affecting virulence or important functions. (/Visualization/Number_of_variants_type.png)
+1. The presence of nonsynonymous SNPs signals not only the prevalence of these but also possible adaptation mechanisms of E. coli in pathogenic situations, like newborn sepsis. With this result in hand, further work can be done to elucidate the functional roles of these variations. 
+2. The prevalence and quality of variants across the genome indicate a wide range of mutations that may contribute to the pathogenicity of E. coli strains in newborn sepsis.  
+3. The depth of coverage indicates that the sequencing workflow captured a large number of variations. Variants in well-covered regions are more likely to be actual and can be studied further for potential roles in E. coli virulence, antibiotic resistance, or other pathogenic pathways in newborn sepsis. 
+4. This SNP dominant variation provides researchers many possible targets of genetic variation linked to newborn sepsis. Although indels are less common, they may carry important variants worth further study, especially those located in genes affecting virulence or important functions.
 
 The study is not complete; however, it is a limitation with the potential to expand into the functional annotation of variations or the linking of variants to particular phenotypes. Finally, integration of variant data with phenotypic assays and transcriptomics could add to our understanding of E. coli biology.
 
