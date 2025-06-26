@@ -1,0 +1,3 @@
+🧬 Investigating Escherichia coli strain in Neonatal Sepsis using WGS data.
+
+Escherichia coli neonatal sepsis is a common presenting infection with high morbidity and mortality rates and is a major public health problem. To detect and characterize genetic variants potentially associated with pathogenicity, here we analyzed whole genome sequencing (WGS) data of E. coli isolates. Using an extensive bioinformatic pipeline, we identified and visualized single nucleotide polymorphisms (SNPs) and insertions/deletions (Indels). The results indicate that SNPs can be near-toxic in making the genomics of E. coli. This provides a genomic survey of E. coli adaptations that will guide future functional studies and into antibiotic resistance mechanisms.
