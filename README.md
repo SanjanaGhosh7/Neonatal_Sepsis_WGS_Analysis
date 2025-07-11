@@ -14,7 +14,7 @@ More future work includes additional functional annotation of variants, comparat
 7. SAMtools was used after this step to convert SAM file into a BAM file.
 8. Variant Calling: SAMtools and BCFtools were used to call SNPs and Indels. The output was a Variant Call Format (VCF) file containing detailed variant information.
 9. Variant Filtration: Filters were applied using BCFtools to retain high-confidence variants, such as those with a quality score (QUAL) > 30 and a read depth (DP) > 10. 
-10. Variant Annotation: BEDTools was used for this step to annotate the variants obtained. This would further help us to predict their functional impacts.
+10. Variant Annotation: BEDTools was used for this step to annotate the variants obtained.
 11 .Visualization: IGV (Integrative Genomics Viewer) was used to visualize variant locations across the genome. Python libraries (matplotlib and pandas) were incorporated to create graphs depicting variant distribution, depth of coverage, and variant types.
 
 
